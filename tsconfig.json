@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2018",                          
+    "baseUrl": "./src",
+    "target": "es2018",
     "module": "CommonJS",
     "moduleResolution": "node", 
     "lib": ["es2017"],
@@ -13,5 +14,14 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-  }
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "models/*": ["app/models/*"],
+      "controller/*": ["app/controller/*"]
+    }
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
+
+ 

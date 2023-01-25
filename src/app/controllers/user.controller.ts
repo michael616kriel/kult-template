@@ -1,25 +1,22 @@
-import { KultController, Get, Post, Put, Delete } from '@kult/core';
+import {
+  KultController,
+  Get,
+  Application,
+  ControllerBase,
+  Context,
+} from '@kult/core';
+import User from '../models/user.model';
 
 @KultController()
-class UserController {
+class UserController extends ControllerBase {
+  constructor(app: Application) {
+    super(app);
+  }
   @Get('/user')
-  get() {
-    return 'Hello World';
-  }
-
-  @Post('/user')
-  post() {
-    return 'Hello World';
-  }
-
-  @Put('/user')
-  put() {
-    return 'Hello World';
-  }
-
-  @Delete('/user')
-  delete() {
-    return 'Hello World';
+  async get(ctx: Context) {
+    const { datasource } = this.app.database;
+    const users = await datasource?.getRepository(User).find();
+    return users;
   }
 }
 

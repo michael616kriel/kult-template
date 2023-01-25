@@ -1,8 +1,8 @@
-import { KultPlugin } from '@kult/core';
+import { Application, KultPlugin, PluginBase } from '@kult/core';
 
 @KultPlugin('Cors')
-export default class Cors {
-  constructor() {
-    // Do something here...
+export default class Cors extends PluginBase {
+  constructor(app: Application) {
+    super(app)
   }
 }
