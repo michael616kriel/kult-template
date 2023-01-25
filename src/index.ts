@@ -1,4 +1,4 @@
-import { Application } from '@nova/core';
+import { Application } from '@kult/core';
 
 const app = new Application();
 app.start();

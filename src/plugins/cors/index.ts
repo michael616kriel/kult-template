@@ -1,6 +1,6 @@
-import { NovaPlugin } from '@nova/core';
+import { KultPlugin } from '@kult/core';
 
-@NovaPlugin('Cors')
+@KultPlugin('Cors')
 export default class Cors {
   constructor() {
     // Do something here...

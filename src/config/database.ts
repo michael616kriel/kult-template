@@ -1,4 +1,4 @@
-import { Env } from '@nova/core';
+import { Env } from '@kult/core';
 
 export default {
   type: Env.get('DATABASE_TYPE', 'postgres'),

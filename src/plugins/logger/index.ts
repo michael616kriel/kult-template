@@ -1,6 +1,6 @@
-import { NovaPlugin } from '@nova/core';
+import { KultPlugin } from '@kult/core';
 
-@NovaPlugin('Logger')
+@KultPlugin('Logger')
 export default class Logger {
   constructor() {
     // Do something here...

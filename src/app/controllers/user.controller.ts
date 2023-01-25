@@ -1,6 +1,6 @@
-import { Controller, Get, Post, Put, Delete } from '@nova/core';
+import { KultController, Get, Post, Put, Delete } from '@kult/core';
 
-@Controller()
+@KultController()
 class UserController {
   @Get('/user')
   get() {
