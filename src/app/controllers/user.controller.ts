@@ -7,7 +7,7 @@ import {
 } from '@kult/core';
 import User from '../models/user.model';
 
-@KultController('users')
+@KultController('/users')
 class UserController extends ControllerBase {
   constructor(app: Application) {
     super(app);
@@ -17,6 +17,10 @@ class UserController extends ControllerBase {
     const { datasource } = this.app.database;
     const users = await datasource?.getRepository(User).find();
     return users;
+  }
+  @Get('/update')
+  async update(ctx: Context) {
+    return 'Working';
   }
 }
 

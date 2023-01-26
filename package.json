@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@kult/cli": "^0.0.8",
-    "@kult/core": "^0.0.24",
+    "@kult/core": "^0.0.26",
     "pg": "^8.8.0"
   }
 }

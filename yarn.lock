@@ -71,10 +71,10 @@
     handlebars "^4.7.7"
     prompts "^2.4.2"
 
-"@kult/core@^0.0.24":
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/@kult/core/-/core-0.0.24.tgz#3e68dc1169b19594b6d9eef38ae4d32d085dff0e"
-  integrity sha512-9juyvsYTcCJ4B9bDZ8kl2yhdwSNUlqgDwKFG7PqlsjmR4l/2SfLlfnoeTBvlXNlUDW/8tmPvtg0FapCCAfgEGw==
+"@kult/core@^0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@kult/core/-/core-0.0.26.tgz#bd9f64999575205a70ece8293e304ce89cf8aaf8"
+  integrity sha512-duTNJnNZf1vLhtaCPQganJ3ZHPhpAGCIEphYaAoHlddWaNFhflIx3VGbQAJ6ZE79EQf/lOr50/kpJ3XH8G3HxQ==
   dependencies:
     chalk "^4.1.2"
     dotenv "^16.0.3"
