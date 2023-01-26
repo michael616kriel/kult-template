@@ -31,7 +31,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@kult/cli": "^0.0.8",
+    "@kult/cli": "^0.0.9",
     "@kult/core": "^0.0.27",
     "pg": "^8.8.0"
   }
